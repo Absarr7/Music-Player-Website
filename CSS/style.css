@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Varela+Round&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('../elements/bg.jpg') no-repeat center center/cover;
+    overflow-x: hidden;
+}
+
+
+/* --------------- Navbar Design ---------- */
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    display: flex;
+    background: transparent;
+    height: 65px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    color: white;
+}
+
+.brand img {
+    width: 130px;
+}
+
+nav ul li {
+    padding: 10px 35px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    transition: 400ms ease;
+    background: #1ED760;
+}
+
+
+/* ------- Container --------- */
+
+.container {
+    min-height: 70vh;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 100vw;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+}
+
+
+/* Bottom media bar */
+
+.media-bar {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    flex-direction: column;
+    align-items: flex-end;
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#Progress-bar {
+    width: 50vw;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    font-size: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+}
